@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search by Category</title>
+    <script src="myScript.js" defer></script>
+</head>
+<body>
+    <h1>Search Products by Category</h1>
+    <select id="categorySelect" onchange="searchByCategory()">
+        <option value="">Select Category</option>
+        <option value="electronics">Electronics</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="women's clothing">Women's Clothing</option>
+        <option value="jewelery">Jewelry</option>
+    </select>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Icon</th>
+            </tr>
+        </thead>
+        <tbody id="categoryTable"></tbody>
+    </table>
+    <a href="index.html">Back to All Products</a>
+</body>
+</html>
